@@ -164,7 +164,9 @@ class DashboardScreen extends StatelessWidget {
                   _buildDestinationCard('Bali', 'assets/wisata-bali.png'),
                   _buildDestinationCard('Jakarta', 'assets/wisata-jakarta.png'),
                   _buildDestinationCard('Padang', 'assets/wisata-padang.png'),
+                  _buildDestinationCard('Korea', 'assets/gyeongbokgung.png'),
                   _buildDestinationCard('Japan', 'assets/torii.png'),
+
                 ],
               ),
             ),

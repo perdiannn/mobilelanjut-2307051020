@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      // Judul Aplikasi
       title: 'LOKATRIP',
+      // Tema Utama Aplikasi
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFF3F6F8), // abu-abu muda
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1E88FF)),
@@ -43,12 +45,13 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
+      // Menentukan halaman awal aplikasi saat pertama kali dijalankan
       initialRoute: LoginScreen.route,
       routes: {
-        LoginScreen.route: (context) => const LoginScreen(),
-        SignupScreen.route: (context) => const SignupScreen(),
-        DashboardScreen.route: (context) => const DashboardScreen(),
-        ProfileScreen.route: (context) => const ProfileScreen(),
+        LoginScreen.route: (context) => const LoginScreen(), // route halaman login
+        SignupScreen.route: (context) => const SignupScreen(), // route halaman signup
+        DashboardScreen.route: (context) => const DashboardScreen(), // route halaman dashboard
+        ProfileScreen.route: (context) => const ProfileScreen(), // route halaman profile
       },
     );
   }
