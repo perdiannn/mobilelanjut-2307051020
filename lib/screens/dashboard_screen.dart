@@ -135,6 +135,12 @@ class DashboardScreen extends StatelessWidget {
                 _buildMenuItem(Icons.calendar_month, 'My Trips'),
                 _buildMenuItem(Icons.book_online, 'Booking'),
                 _buildMenuItem(Icons.favorite, 'Wishlist'),
+                GestureDetector(
+                onTap: () {
+                    Navigator.pushNamed(context, '/profile');
+                  },
+                  child: _buildMenuItem(Icons.person, 'Profile'),
+                ),
               ],
             ),
 
